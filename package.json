@@ -1,0 +1,18 @@
+{
+  "name": "sourcemaps-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --format=iife --minify --sourcemap --outfile=dist/app.min.js && esbuild src/index.ts --bundle --format=iife --sourcemap --outfile=dist/app.js",
+    "crash": "node dist/app.min.js",
+    "decode": "node scripts/decode-map.mjs",
+    "demo": "node scripts/map-only-resolve.mjs",
+    "symbolicate": "node scripts/symbolicate.mjs",
+    "heuristic": "node scripts/caller-heuristic.mjs",
+    "compare": "node scripts/compare-traces.mjs"
+  },
+  "devDependencies": {
+    "acorn": "^8.16.0",
+    "esbuild": "^0.25.0"
+  }
+}

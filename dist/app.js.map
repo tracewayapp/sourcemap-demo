@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/user.ts", "../src/index.ts"],
+  "sourcesContent": ["export interface User {\n  name: string;\n}\n\nexport function validateUser(user: User): User {\n  const trimmed = user.name.trim();\n  if (trimmed.length === 0) {\n    throw new Error(\"user has no name\");\n  }\n  return { name: trimmed };\n}\n", "import { validateUser, type User } from \"./user\";\n\nfunction handleSignup(form: User): User {\n  return validateUser({ name: form.name });\n}\n\nhandleSignup({ name: \"   \" });\n"],
+  "mappings": ";;AAIO,WAAS,aAAa,MAAkB;AAC7C,UAAM,UAAU,KAAK,KAAK,KAAK;AAC/B,QAAI,QAAQ,WAAW,GAAG;AACxB,YAAM,IAAI,MAAM,kBAAkB;AAAA,IACpC;AACA,WAAO,EAAE,MAAM,QAAQ;AAAA,EACzB;;;ACRA,WAAS,aAAa,MAAkB;AACtC,WAAO,aAAa,EAAE,MAAM,KAAK,KAAK,CAAC;AAAA,EACzC;AAEA,eAAa,EAAE,MAAM,MAAM,CAAC;",
+  "names": []
+}
