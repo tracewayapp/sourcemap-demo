@@ -6,7 +6,7 @@
   </picture>
 </p>
 
-<h3 align="center">Source maps can't do the one thing you think they do</h3>
+<h3 align="center">How source maps fall short where it matters most</h3>
 
 <p align="center">
   <sub>Demo project for the Traceway deep dive into the JS/TS toolchain</sub>
@@ -20,7 +20,7 @@
 
 This is a **demo project**. It shows, fully reproducibly, that a source map alone can recover the original **file, line, and column** of every frame in a minified stack trace, but **not the function names**. For the names you also need the minified bundle itself, parsed.
 
-The whole story (the VLQ decoding by hand, the failure modes, the fix, and how Node gets away with it) is in the blog post: **[Deep dive into the JS/TS toolchain: Source maps can't do the one thing you think they do](https://tracewayapp.com/blog/deep-dive-into-the-sourcemaps)**.
+The whole story (the VLQ decoding by hand, the failure modes, the fix, and how Node gets away with it) is in the blog post: **[Deep dive into the JS/TS toolchain: How source maps fall short where it matters most](https://tracewayapp.com/blog/deep-dive-into-the-sourcemaps)**.
 
 ## Run it
 
