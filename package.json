@@ -9,7 +9,9 @@
     "demo": "node scripts/map-only-resolve.mjs",
     "symbolicate": "node scripts/symbolicate.mjs",
     "heuristic": "node scripts/caller-heuristic.mjs",
-    "compare": "node scripts/compare-traces.mjs"
+    "compare": "node scripts/compare-traces.mjs",
+    "quirk": "node scripts/quirk.mjs",
+    "no-quirk": "node scripts/node-no-quirk.mjs"
   },
   "devDependencies": {
     "acorn": "^8.16.0",
